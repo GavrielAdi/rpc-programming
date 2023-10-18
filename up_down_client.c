@@ -36,11 +36,11 @@ void updown_1(char *host, char *command, char *filepath) {
     strcpy(ud_1_arg.dirname, actual_file);
     while (1) {
       memset(ud_1_arg.sendBuff, 0, sizeof(ud_1_arg.sendBuff));
-      int nread = fread(ud_1_arg.sendBuff, 1, 1025, fp);
+      int nread = fread(ud_1_arg.sendBuff, 1, 2049, fp);
       if (nread > 0) {
         result_1 = ud_1(&ud_1_arg, clnt);
       }
-      if (nread < 1025) {
+      if (nread < 2049) {
         if (ferror(fp)) printf("Error reading\n");
         break;
       }

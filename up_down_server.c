@@ -31,10 +31,10 @@ struct chunk *ud_1_svc(chunk *argp, struct svc_req *rqstp) {
     }
     
     memset(argp->sendBuff, 0, sizeof(argp->sendBuff));
-    int nread = fread(argp->sendBuff, 1, 1025, fp);
+    int nread = fread(argp->sendBuff, 1, 2049, fp);
     result = *argp;
 
-    if (nread > 0 && nread == 1025) {
+    if (nread > 0 && nread == 2049) {
       // If you read successfully, then send this data
       return &result;
     } else if (ferror(fp)) {
