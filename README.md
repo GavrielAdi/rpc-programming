@@ -6,11 +6,5 @@
 | Samuel Yuma Krismata | 5027221029 |
 | Gavriel Pramuda Kurniaadi | 5027221031 |
 
-Tabel Of Content
-- [Penjelasan .h](#penjelasan-.h)
-- [Penjelasan client.c](#penjelasan-client.c)
-- [Penjelasan server.c](#penjelasan-server.c)
-
-## Penjelasan .h
-## Penjelasan client.c
-## Penjelasan server.c
+## Dokumentasi Program
+[Dokumentasi Program RPC](https://docs.google.com/document/d/1Q7UHlyacsXdtpp-ootmXkmPc-na-N8Ukum52QV3P4G4/edit?usp=sharing)
